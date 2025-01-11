@@ -2,20 +2,20 @@ const utils = require('./index.js');
 
 describe('Test fahrenheit to celsius conversion', () => {
     test('32 degrees fahrenheit should be 0 degrees celsius', () => {
-        expect(utils.fahrenheitToCelsius(32)).toBe(0);
+        expect(utils.fahrenheitToCelsius(32)).toEqual(0);
     });
     test('-40 degrees fahrenheit should be -40 degrees celsius', () => {
-        expect(utils.fahrenheitToCelsius(-40)).toBe(-40);
+        expect(utils.fahrenheitToCelsius(-40)).toEqual(-40);
     });
 });
 
 
 describe('Test celsius to fahrenheit conversion', () => {
     test('100 degrees celsius should be 0 degrees fahrenheit', () => {
-        expect(utils.celsiusToFahrenheit(100)).toBe(212);
+        expect(utils.celsiusToFahrenheit(100)).toEqual(212);
     });
     test('0 degrees celsius should be 32 degrees fahrenheit', () => {
-        expect(utils.celsiusToFahrenheit(0)).toBe(32);
+        expect(utils.celsiusToFahrenheit(0)).toEqual(32);
     });
 });
 
