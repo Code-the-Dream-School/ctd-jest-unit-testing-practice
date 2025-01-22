@@ -2,10 +2,10 @@ function fahrenheitToCelsius(degreesFahrenheit) {
     // The equation to convert from fahrenheit to celsius is
     //  (<degrees in fahrenheit> - 32) * 5/9 = <degrees in celsius>
     let degreesCelsius;
+   
+    degreesCelsius = (degreesFahrenheit - 32) * 5/9;
 
-    (degreesFahrenheit - 32) * 5/9;
-
-    return degreesFahrenheit;
+    return degreesCelsius;
 }
 
 function celsiusToFahrenheit(degreesCelsius) {
@@ -13,7 +13,7 @@ function celsiusToFahrenheit(degreesCelsius) {
     //  (<degrees in celsius> * 9/5) + 32 = <degrees in fahrenheit>
     let degreesFahrenheit = (degreesCelsius * 9/5) + 32;
 
-    return degreesFarenheit;
+    return degreesFahrenheit;
 }
 
 function getFirstStringFromArray(list) {

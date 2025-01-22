@@ -20,17 +20,20 @@ describe('Test celsius to fahrenheit conversion', () => {
 });
 
 describe('Test getting the first string from an array', () => {
-    test('Returns the first item if it is a string', () => {
-        const testList = ['hello', 'world'];
-        expect(utils.getFirstStringFromArray(testList)).toBe('hello');
+    test("Returns the first item if it is a string", () => {
+      const testList = ["hello", "world"];
+      expect(utils.getFirstStringFromArray(testList)).toBe("hello");
     });
-    test('Returns null for an empty array', () => {
-        // Write your test code here
+    test("Returns null for an empty array", () => {
+      const testList = [];
+      expect(utils.getFirstStringFromArray(testList)).toBeNull();
     });
-    test('Returns null if no strings are in the array', () => {
-        // Write your test code here
+    test("Returns null if no strings are in the array", () => {
+      const testList = [1, 2, 3, 4, 5, 6];
+      expect(utils.getFirstStringFromArray(testList)).toBeNull();
     });
-    test('Returns the second item if the first item is a number', () => {
-        // Write your test code here
+    test("Returns the second item if the first item is a number", () => {
+      const testList = [1, "Hello word"];
+      expect(utils.getFirstStringFromArray(testList)).toBe("Hello word");
     });
 });
